@@ -1,0 +1,16 @@
+jupyterlab
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+scipy
+statsmodels
+plotly
+notebook
+ipywidgets
+jupyterlab-templates
+scanpy[leiden]
+louvain
+GEOparse
+fa2

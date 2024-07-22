@@ -1,0 +1,19 @@
+version: '3'
+services:
+  notebook-py:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "1000:8888"
+    volumes:
+      - ${PWD}/GSE72857/py:/workspace:rw
+
+  notebook-r:
+    image: quay.io/jupyter/datascience-notebook:latest
+    restart: always
+    ports:
+      - "1001:8888"
+    volumes:
+      - ${PWD}/GSE72857/r:/home/jovyan/work:rw
